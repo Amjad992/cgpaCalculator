@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+    
+    <head>
+    
+        <title>Amjad Majed</title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Amjad Majed's personal webstie and portfolio">
+        
+        <meta name="keywords" content="amjad, majed, portfolio, personal, software engineer, software, application, app, android,
+                                       programing, development">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Raleway:400,700" rel="stylesheet">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        
+        <!-- BX Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+        
+        <!-- Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        
+        <!-- Responsive CSS - Media Queries -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        
+    </head>
+    
+    <body>
+        
+        
+        <header>
+        
+            <h1> CGPA and GPA Calculator! </h1>
+            <hr>
+        
+        </header>
+
+        <!-- This section will include the three possible system options available -->
+		<section id="options-section">
+		
+			<div id="options-section-overlay">
+            
+                <div id="system-options-container" class="container">
+                    
+                    <!-- system options radio buttons -->                            
+                    <div id="system-options" class="row">
+                        
+                            <h3>Choose your system desired : (these system are based on systems currently used at UET Lahore)</h3>
+                        
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <input type="radio" value="old" autocomplete="off" class="system-option" name="option" id="test1"><p class="system-option"> Old System </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+                                <input type="radio" value="new" autocomplete="off" class="system-option" name="option" id="test2"><p class="system-option"> New System </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> 
+                                <input type="radio" value="custom" autocomplete="off" class="system-option" name="option"><p class="system-option"> Custom System </p>                      
+                            </div>
+                        
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- scheme of the system summary -->
+                    <div id="system-scheme" class="row">
+                    
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- custom input buttons -->
+                    <div id="custom-input-buttons" class="row">
+                    
+                        <button type="button" id="custom-input-button-add" onclick="addCustomGrade()" class="btn btn-info"> Add Grade </button>
+                        <button type="button" id="custom-input-button-delete" onclick="deleteCustomGrade()" class="btn btn-danger"> Delete Grade </button>
+                        <button type="button" id="custom-input-button-save" onclick="saveCustomScheme()" class="btn btn-primary"> Save </button>
+
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- custom input fields -->
+                    <div id="custom-input-fields" class="row">
+                    
+                    </div>
+                                        
+                </div>
+           
+			</div>
+		
+		</section>
+        
+        <section id="semesters-section">
+        
+            <div id="semesters-section-overlay">
+            
+                <div id="semesters-container" class="container">
+                    
+                    <!-- scheme of the system summary -->
+                    <div id="cgpa-value" class="row">
+                        
+                    </div>
+                    
+                    <br>
+                    
+                    <!-- custom input buttons -->
+                    <div id="semesters-buttons" class="row">
+                    
+                        <button type="button" onclick="addSemester()" id="semester-button-add" class="btn btn-info"> Add Semester </button>
+                        <button type="button" onclick="deleteSemester()" id="semester-input-button-delete" class="btn btn-danger"> Delete Semester </button>
+                        <button type="button" onclick="calculate()" id="semester-input-button-calculate" class="btn btn-primary"> Calculate </button>
+
+                    </div>
+                    
+                    <br>
+                
+                    <div id="semesters-row" class="row">
+                        
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </section>
+
+ 
+
+
+        
+        <!-- Scripts -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- My Script -->
+        <script src="js/custom.js"></script>
+        
+        
+        
+
+    </body>
+    
+
+</html>
